@@ -762,6 +762,80 @@ a.work-item:hover {
   line-height: 1.7;
 }
 
+.background-section {
+  padding: 5.5rem 0;
+  background: #e9eee6;
+}
+
+.background-heading {
+  margin-bottom: 2.5rem;
+}
+
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.background-card {
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border: 1px solid #dce4d9;
+  border-radius: 8px;
+  background: #fbfcf9;
+}
+
+.background-label {
+  margin: 0 0 1.1rem;
+  color: #397454;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.background-card h3 {
+  margin: 0 0 0.45rem;
+  color: #20372a;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.background-organization {
+  margin: 0;
+  color: #58645b;
+  font-weight: 600;
+}
+
+.background-summary {
+  margin: 1.25rem 0 0;
+  color: #58645b;
+  line-height: 1.75;
+}
+
+.background-details {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #dce2d8;
+}
+
+.background-details h4 {
+  margin: 0 0 0.3rem;
+  color: #20372a;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.background-details p {
+  margin: 0;
+  color: #58645b;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .focus-section {
   padding: 5rem 0;
   background: #e9eee6;
@@ -1083,8 +1157,18 @@ a.work-item:hover {
   .work-section,
   .capabilities-section,
   .approach-section,
+  .background-section,
   .about-story {
     padding: 3.75rem 0;
+  }
+
+  .background-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .background-heading {
+    margin-bottom: 1.5rem;
   }
 
   .section-heading,
@@ -1195,4 +1279,3 @@ a.work-item:hover {
     flex-wrap: wrap;
   }
 }
-
